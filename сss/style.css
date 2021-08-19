@@ -193,7 +193,8 @@
   border: none;
   border-radius: 4px;
   padding: 10px 32px;
-  min-width: 200px;
+  width: 200px;
+  height: 50px;
   text-align: center;
   margin-top: 0;
   cursor: pointer;
@@ -499,26 +500,13 @@
 .form-input:focus {
   border-color: var(--accent-color);
 }
-.follow-button {
-  width: 200px;
-  height: 50px;
-
-  background-color: var(--accent-color);
-  color: var(--body-background-color);
-
-  font-size: 16px;
-  line-height: 1.875;
+.follow-form .primary-button {
   display: flex;
   align-items: center;
-  letter-spacing: 0.06em;
-  border: none;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
-  cursor: pointer;
   padding: 0;
-
   margin-left: 12px;
 }
+
 .follow-text {
   padding-left: 29px;
   padding-right: 10px;
@@ -621,7 +609,7 @@
 }
 .form-field-input {
   display: flex;
-  padding-left: 35px;
+  padding: 0 20px 0 42px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   height: 40px;
@@ -652,7 +640,6 @@
   resize: none;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
-  margin-bottom: 20px;
   height: 120px;
   padding: 12px 16px;
   font-size: 14px;
@@ -685,6 +672,7 @@
   background: var(--accent-color);
   border-radius: 2px;
   border: none;
+  transition: background-color 250ms var(--timing-function);
 }
 .check-icon {
   width: 16px;
@@ -698,7 +686,6 @@
   justify-content: center;
   display: flex;
 }
-
 .checkbox-text {
   font-size: 14px;
   line-height: 1.7;
@@ -714,18 +701,6 @@
   display: flex;
   justify-content: center;
 }
-.modal-button {
-  width: 200px;
-  height: 50px;
-  border: none;
-  padding: 0;
-  border-radius: 4px;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  background: var(--accent-color);
-  color: var(--body-background-color);
-  cursor: pointer;
-}
-
 /* Портфоліо */
 .portfolio-section {
   padding: 94px 0;
