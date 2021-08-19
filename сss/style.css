@@ -638,8 +638,11 @@
   fill: #212121;
   transition: fill 250ms var(--timing-function);
 }
-
-hover focus .form-field-comment {
+.form-field-input:focus ~ .overlay-modal,
+.form-field-input:hover ~ .overlay-modal {
+  fill: var(--accent-color);
+}
+.form-field-comment {
   margin-bottom: 20px;
 }
 .commentarea {
@@ -667,6 +670,7 @@ hover focus .form-field-comment {
 .form-field-policy {
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 .checkbox-input {
   appearance: none;
@@ -682,13 +686,10 @@ hover focus .form-field-comment {
 .check-icon {
   width: 16px;
   height: 15px;
+  fill: #ffffff;
 
   border-radius: 2px;
   border: 2px solid #000000;
-  box-sizing: border-box;
-
-  margin: 0;
-  padding: 0;
 
   align-items: center;
   justify-content: center;
@@ -707,8 +708,8 @@ hover focus .form-field-comment {
   color: #2196f3;
 }
 .form-field-button {
-  margin-left: auto;
-  margin-right: auto;
+  display: flex;
+  justify-content: center;
 }
 .modal-button {
   width: 200px;
@@ -720,17 +721,6 @@ hover focus .form-field-comment {
   background: #2196f3;
   color: #ffffff;
   cursor: pointer;
-}
-.form-field-button {
-  justify-items: center;
-  align-items: center;
-  display: flex;
-}
-.icon-modal-check {
-  display: flex;
-  fill: #ffffff;
-  align-items: center;
-  justify-content: center;
 }
 
 /* Портфоліо */
