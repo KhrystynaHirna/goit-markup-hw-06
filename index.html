@@ -385,7 +385,7 @@
         </address>
       </div>
 
-      <div class="join container">
+      <div class="join">
         <h3 class="join-title">Присоединяйтесь</h3>
         <ul class="join-icon-list">
           <li class="join-icon-item">
@@ -424,7 +424,7 @@
         </ul>
       </div>
 
-      <div class="follow container">
+      <div class="follow">
         <h3 class="join-title">Подпишитесь на рассылку</h3>
         <form class="follow-form">
           <label class="follow-label">
@@ -449,13 +449,15 @@
           <use href="./img/sprite.svg#icon-close"></use>
         </svg>
       </button>
-      <h2 class="modal-title">Оставьте свои данные, мы вам перезвоним</h2>
+      <p class="modal-title">Оставьте свои данные, мы вам перезвоним</p>
+      
+  <!-- Модальна форма -->
       <form action="modal-form">
         <div class="form-field">  
           <label class="form-field-title" for="name">Имя</label>
           <input class="form-field-input" type="text" name="name" id="name">
            <svg class="overlay-modal" width="18px" height="18px">
-            <use class="overlay-modal-icon" href="./img/sprite.svg#icon-modal-person"></use>
+            <use href="./img/sprite.svg#icon-modal-person"></use>
           </svg>
         </div>
         
@@ -477,7 +479,7 @@
         
         <div class="form-field-comment"> 
           <label class="form-field-title" for="comment">Комментарий</label>
-          <textarea name="comment" id="comment" cols="30" rows="10" placeholder="Введите текст"></textarea>
+          <textarea class="commentarea" name="comment" id="comment" cols="30" rows="10" placeholder="Введите текст"></textarea>
         </div>
         
         <div class="form-field-check">
@@ -496,6 +498,8 @@
           <div class="form-field-button">
              <button class="modal-button" type="submit">Отправить</button>
           </div>
+  </div>
+
 
       </form>
   <script src="./js/modal.js"></script>
